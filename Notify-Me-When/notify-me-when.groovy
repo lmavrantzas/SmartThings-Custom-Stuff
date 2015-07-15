@@ -4,6 +4,17 @@
  *  Author: SmartThings
  *  Date: 2013-03-20
  */
+ 
+ definition(
+    name: "Notify Me When",
+    namespace: "smartthingscustomapps",
+    author: "SmartThings",
+    description: "Used for Notifications",
+    category: "My Apps",
+    iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
+    iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
+    iconX3Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png")
+ 
 preferences {
 	section("Choose one or more, when..."){
 		input "motion", "capability.motionSensor", title: "Motion Here", required: false, multiple: true
